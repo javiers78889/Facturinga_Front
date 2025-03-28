@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import imagenes from '../../src/img/Sociodrama.jpeg'
+import IngresarButton from './boton/IngresarButton'
 export default function Intro() {
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -12,22 +13,17 @@ export default function Intro() {
                     <div className="flex flex-col justify-center space-y-4">
                         <div className="space-y-2">
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                                Transform Your Business with Our Innovative Solution
+                                Transforma Tu Negocio Con Nuestra Solucion Innovadora
                             </h1>
                             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                                Streamline your workflow, increase productivity, and drive growth with our all-in-one platform.
+                                Crea facturas de forma ilimitada y envialas a tus clientes
                             </p>
                         </div>
                         <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                            <Button>
-                                <Link href="#contact">
-                                    Get Started
-                                    <ArrowRight className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                            <Button>
-                                <Link href="#demo">Watch Demo</Link>
-                            </Button>
+                            <IngresarButton/>
+                            
+                                <Link href="#demo" className='hidden md:flex rounded-xl bg-green-500 hover:bg-green-800 px-6 py-2 text-white'>Contacto </Link>
+                            
                         </div>
                     </div>
                     <div className="flex items-center justify-center">

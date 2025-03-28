@@ -14,7 +14,7 @@ export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <NavBarApp />
-      <main className="flex-1">
+      <main className="flex-1 ">
         <Intro />
 
         <Features />

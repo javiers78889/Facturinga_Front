@@ -5,6 +5,7 @@ import { Button } from '@headlessui/react'
 import Link from 'next/link'
 import Logo from '@/src/ui/Logo'
 import { MobileNav } from './MovilNav/MovilNav'
+import IngresarButton from './boton/IngresarButton'
 
 export default function NavBarApp() {
     return (
@@ -27,9 +28,7 @@ export default function NavBarApp() {
                 </nav>
                 <div className="flex items-center gap-4">
                     <MobileNav />
-                    <Link href='/auth/login' className="hidden md:flex rounded-xl bg-red-500 hover:bg-red-800 px-6 py-2 text-white ">
-                        Get Started
-                    </Link>
+                    <IngresarButton/>
                 </div>
             </div>
         </header>
